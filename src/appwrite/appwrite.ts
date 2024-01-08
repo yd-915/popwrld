@@ -10,6 +10,8 @@ import {
 
 const databaseId = "first12345";
 
+const collectionId = "659c496222119edc17a6"
+
 let api: any = {
   sdk: null,
 
