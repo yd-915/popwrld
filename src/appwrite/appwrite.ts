@@ -8,7 +8,7 @@ import {
   Storage,
 } from "appwrite";
 
-const databaseId = process.env.NEXT_PUBLIC_DATABASE_ID;
+const databaseId = "first12345";
 
 let api: any = {
   sdk: null,
@@ -94,13 +94,13 @@ let api: any = {
   createFile: (file: any) => {
     return api
       .provider()
-      .storage.createFile(process.env.NEXT_PUBLIC_BUCKET_ID, ID.unique(), file);
+      .storage.createFile("659c3509ec7659798423", ID.unique(), file);
   },
 
   getFilePreview: (fileId: string) => {
     return api
       .provider()
-      .storage.getFileView(process.env.NEXT_PUBLIC_BUCKET_ID, fileId);
+      .storage.getFileView("659c3509ec7659798423", fileId);
   },
 };
 
