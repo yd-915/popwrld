@@ -20,7 +20,7 @@ let api: any = {
     let appwrite = new Appwrite();
     appwrite
       .setEndpoint("https://cloud.appwrite.io/v1")
-      .setProject("6475ca5453bd7b131cd8");
+      .setProject("659c30aa4ecd04110eaa");
     const account = new Account(appwrite);
     const database = new Databases(appwrite);
     const storage = new Storage(appwrite);
